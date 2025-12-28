@@ -12,6 +12,8 @@ function hidangkanMie(Mie) {
 }
 
 // JALANKAN
+console.log("CALLBACK");
+
 console.log("Kayyisa Mencuci Piring")
 masakMie("Soto", hidangkanMie);
 console.log("Kayyisa : Piring Sudah Bersih!😗")
