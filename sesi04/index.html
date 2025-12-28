@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript - basic</h1>
+    open the console
+    <script>
+        console.log("Hello World");
+
+        const nilai = [79, 85, 90, 95, 100];
+        let kkm = 90
+
+        for (let i = 0; i < nilai.length; i++) {
+            if (nilai[i] >= kkm) {
+                console.log("Nilai " + nilai[i] + " Lulus");
+            } else {
+                console.log(`Nilai ${nilai[i]} Tidak Lulus`);
+            }
+        }
+
+        // function
+        function HitungLuas(panjang, lebar) {
+            let luas = panjang * lebar;
+            return luas;
+        }
+
+        //arrow function
+        const sapa = (nama, umur) => {
+            console.log(`selamat pagi ${nama}, umur kamu ${umur}, tahun, umur hanyalah angka🤏 semoga harimu menyenangkan!`);
+        }
+
+
+        console.log(HitungLuas(10, 5));
+        console.log(sapa ("Calon Istri Basyasman", 20));
+
+        // object
+        const Mahasiswa = {
+            nama: "Calon Istri Basyasman",
+            umur: 20,
+            ip: "4.5",
+        };
+
+        const nami = Mahasiswa.nama
+        console.log(nami);
+
+        // destructuring
+        const { nama, umur, ip } = Mahasiswa
+
+        // ternary
+        let keterangan = (ip == 4.5) ? "Cumlaude" : "Tidak Cumlaude"
+
+        console.log(`hallo aku ${nama}, umurku ${umur}, ip ku ${ip}. ${keterangan}`);
+
+    </script>
+</body>
+</html>
