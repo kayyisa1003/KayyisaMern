@@ -3,13 +3,13 @@ function TombolCounter() {
     const [like, setLike] = React.useState(0);
 
     return (
-        <div>
-            <h1>Tombol Counter</h1>
-            <h2>Jumlah: {jumlah}</h2>   
-            <button className = "btn btn-primary" onClik={() => setJumlah(jumlah + 1)}>tambah</button>
+        <div className= "container mt-4">
+            <h3>Tombol Counter</h3>
+            <h5>Jumlah: {jumlah}</h5>   
+            <button className = "btn btn-primary me-2" onClik={() => setJumlah(jumlah + 1)}>tambah</button>
             <button className = "btn btn-secondary" onClik={() => setJumlah(jumlah - 1)}>kurang</button>
             <br />
-            <button className = "btn btn-danger"onClik={() => setLike( like + 1)}>like {like}</button>
+            <button className = "btn btn-danger mt-4 d-block"onClik={() => setLike( like + 1)}>like❤️‍🔥 {like}</button>
         </div>
     )
 }
